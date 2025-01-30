@@ -200,6 +200,36 @@ body, html {
     transform: translateY(0);
 }
 
+/* OnlyFans Logo Styling */
+.onlyfans-logo {
+    width: 50px; 
+    height: auto; 
+    border-radius: 50%; 
+    background-color: transparent; 
+    display: inline-block;
+    margin-right: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.prank-link {
+    font-weight: bold;
+    color: #f8d210; /* Highlight color for the link */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: color 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.prank-link:hover {
+    color: #ff5733; /* Change link color on hover */
+    transform: scale(1.1);
+}
+
+.prank-link:hover .onlyfans-logo {
+    transform: scale(1.1); /* Slightly enlarge the logo on hover */
+}
+
 
 /* Mobile Optimization */
 @media (max-width: 768px) {
