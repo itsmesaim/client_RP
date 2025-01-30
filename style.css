@@ -89,6 +89,46 @@ body, html {
     transform: scale(1.1);
 }
 
+/* Tools Section */
+.tools-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px; /* Adds spacing between logos */
+    margin-top: 20px;
+}
+
+.tool {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
+    padding: 10px;
+}
+
+.tool img {
+    max-width: 60%;
+    max-height: 60%;
+}
+
+.tool p {
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Hover Effect - Running Shadows */
+.tool:hover {
+    box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
+}
+
 
 @keyframes shake {
     0% { transform: translateX(-3px) rotate(-2deg); }
@@ -162,5 +202,23 @@ body, html {
 
     .project-card {
         margin-bottom: 50px; /* Increased space between project cards */
+    }
+    .tools-container {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .tool {
+        width: 100px;
+        height: 100px;
+    }
+
+    .tool img {
+        max-width: 50%;
+        max-height: 50%;
+    }
+
+    .tool p {
+        font-size: 12px;
     }
 }
