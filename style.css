@@ -1,3 +1,4 @@
+
 /* Smooth fade-in animations */
 .fade-in {
     opacity: 0;
@@ -15,7 +16,7 @@
 }
 
 /* Floating animation for hero image */
-.float-animation {
+#hero-image {
     animation: float 2s ease-in-out infinite;
 }
 @keyframes float {
@@ -50,8 +51,8 @@
 /* Mobile Optimization */
 @media (max-width: 768px) {
     #hero {
-        padding-top: 40px; /* Reduce top padding for mobile */
-        padding-bottom: 30px; /* Reduce bottom padding for mobile */
+        padding-top: 100px; /* Reduce top padding for mobile */
+        padding-bottom: 100px; /* Reduce bottom padding for mobile */
         flex-direction: column-reverse; /* Ensure image stacks below text */
         text-align: center; /* Center-align text */
     }
@@ -66,4 +67,48 @@
 body, html {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* Acronym Section */
+.acronym {
+    font-size: 4rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #ff5733; 
+    display: inline-block;
+    transition: color 0.3s ease-in-out;
+}
+.acronym:hover {
+    color: #f8d210; /* Change to a highlighted color */
+    animation: shake 0.5s ease-in-out 3;
+}
+.acronym-details {
+    display: none;
+    margin-top: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+@keyframes shake {
+    0% { transform: translateX(-3px) rotate(-2deg); }
+    100% { transform: translateX(3px) rotate(2deg); }
+}
+
+/* Strikethrough effect for text inside brackets */
+.bracket-strikethrough::before {
+    content: "(";
+    text-decoration: none;
+}
+
+.bracket-strikethrough::after {
+    content: ")";
+    text-decoration: none;
+}
+
+.bracket-strikethrough {
+    text-decoration: line-through;
+    color: #ff5733; /* Match the acronym color */
 }
