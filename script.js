@@ -1,20 +1,3 @@
-// // Scroll-triggered animations
-// document.addEventListener("DOMContentLoaded", function () {
-//     const fadeInElements = document.querySelectorAll(".fade-in");
-
-//     const observer = new IntersectionObserver((entries) => {
-//         entries.forEach((entry) => {
-//             if (entry.isIntersecting) {
-//                 entry.target.classList.add("active");
-//             }
-//         });
-//     });
-
-//     fadeInElements.forEach((el) => observer.observe(el));
-// });
-
-
-// script.js:
 // Scroll-triggered animations
 document.addEventListener("DOMContentLoaded", function () {
     const fadeInElements = document.querySelectorAll(".fade-in");
@@ -39,5 +22,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
     acronym.addEventListener("mouseleave", function () {
         details.style.display = "none";
+    });
+
+    // navbar effect
+    const navbar = document.querySelector(".navbar");
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 50) {
+            navbar.classList.add("scrolled"); // Reduce opacity when scrolling
+        } else {
+            navbar.classList.remove("scrolled"); // Restore full opacity at the top
+        }
     });
 });
