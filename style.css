@@ -28,6 +28,7 @@
 
 /* Floating animation for hero image */
 #hero-image {
+    max-width: 100px;
     animation: float 2s ease-in-out infinite;
 }
 @keyframes float {
