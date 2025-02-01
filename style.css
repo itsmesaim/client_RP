@@ -28,7 +28,7 @@
 
 /* Floating animation for hero image */
 #hero-image {
-    max-width: 500px;
+    /* max-width: 500px; */
     animation: float 2s ease-in-out infinite;
 }
 @keyframes float {
@@ -73,7 +73,7 @@ html{
 }
 
 /* Acronym Section */
-.acronym {
+/* .acronym {
     font-size: 4rem;
     font-weight: bold;
     cursor: pointer;
@@ -83,7 +83,7 @@ html{
 }
 .acronym:hover {
     color: #f8d210; /* Change to a highlighted color */
-    animation: shake 0.5s ease-in-out 3;
+    /* animation: shake 0.5s ease-in-out 3;
 }
 .acronym-details {
     display: none;
@@ -91,7 +91,7 @@ html{
     background: rgba(255, 255, 255, 0.1);
     padding: 15px;
     border-radius: 10px;
-}
+} */ */
 
 /* Contact Links Styling */
 .contact-link {

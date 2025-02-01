@@ -13,16 +13,16 @@ document.addEventListener("DOMContentLoaded", function () {
     fadeInElements.forEach((el) => observer.observe(el));
 
 // Acronym hover effect
-    const acronym = document.getElementById("acronym-hover");
-    const details = document.querySelector(".acronym-details");
+    // const acronym = document.getElementById("acronym-hover");
+    // const details = document.querySelector(".acronym-details");
 
-    acronym.addEventListener("mouseenter", function () {
-        details.style.display = "block";
-    });
+    // acronym.addEventListener("mouseenter", function () {
+    //     details.style.display = "block";
+    // });
 
-    acronym.addEventListener("mouseleave", function () {
-        details.style.display = "none";
-    });
+    // acronym.addEventListener("mouseleave", function () {
+    //     details.style.display = "none";
+    // });
 
     // navbar effect
     const navbar = document.querySelector(".navbar");
